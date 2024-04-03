@@ -150,50 +150,57 @@ export default function Home() {
             <h1 className="font-semibold tracking-wide text-3xl text-black">
               Money Managerrr
             </h1>
-            <section>
-              <div className="w-full max-w-full h-auto">
-                <div className="container mx-auto relative max-w-[100%] ">
-                  <div className="absolute top-[24px] -left-[0px] z-0 bg-[#1E1E1E] flex flex-wrap justify-center items-center w-[100%] p-6 h-[200px] rounded-[28px] drop-shadow-md">
-                    <div className="w-full pb-4">
-                      <div className="flex flex-col  text-start pb-3 mb-4 border-b border-stone-700">
-                        <p className="text-xs font-semibold tracking-wide text-[#6F6F6F] pb-3">
-                          Start Income
-                        </p>
-                        <h1 className="font-semibold tracking-wide text-white text-4xl">
-                          <div className="flex justify-between items-center">
-                            <div className="flex justify-between">
-                              <span className="text-xl text-stone-500 flex items-start pr-4 ">
-                                Rp
-                              </span>
-                              {formatNumber(totalIncome)}
-                            </div>
-                            <div className="text-2xl text-stone-500">,-</div>
-                          </div>
-                        </h1>
-                      </div>
-                      <div className="flex flex-col-2 justify-between text-start">
-                        <div className="text-start w-[100%]">
-                          <p className="text-xs tracking-wide pb-1 text-[#6F6F6F]">
-                            Your Balance
+
+            <button
+              className="w-full max-w-full h-auto"
+              type="button"
+              onClick={toggleContainer}
+            >
+              <section>
+                <div className="w-full max-w-full h-auto">
+                  <div className="container mx-auto relative max-w-[100%] ">
+                    <div className="absolute top-[24px] -left-[0px] z-0 bg-[#1E1E1E] flex flex-wrap justify-center items-center w-[100%] p-6 h-[200px] rounded-[28px] drop-shadow-md">
+                      <div className="w-full pb-4">
+                        <div className="flex flex-col  text-start pb-3 mb-4 border-b border-stone-700">
+                          <p className="text-xs font-semibold tracking-wide text-[#6F6F6F] pb-3">
+                            Start Income
                           </p>
-                          <h1 className="font-semibold tracking-wide text-lg text-white">
-                            {formatNumber(totalIncome - totalExpense)}
+                          <h1 className="font-semibold tracking-wide text-white text-4xl">
+                            <div className="flex justify-between items-center">
+                              <div className="flex justify-between">
+                                <span className="text-xl text-stone-500 flex items-start pr-4 ">
+                                  Rp
+                                </span>
+                                {formatNumber(totalIncome)}
+                              </div>
+                              <div className="text-2xl text-stone-500">,-</div>
+                            </div>
                           </h1>
                         </div>
-                        <div className="text-end w-[100%]">
-                          <p className="text-xs tracking-wide pb-1 text-[#FF6262]">
-                            Your Expenses
-                          </p>
-                          <h1 className="font-semibold tracking-wide text-[#FF6262] text-lg">
-                            - {formatNumber(totalExpense)}
-                          </h1>
+                        <div className="flex flex-col-2 justify-between text-start">
+                          <div className="text-start w-[100%]">
+                            <p className="text-xs tracking-wide pb-1 text-[#6F6F6F]">
+                              Your Balance
+                            </p>
+                            <h1 className="font-semibold tracking-wide text-lg text-white">
+                              {formatNumber(totalIncome - totalExpense)}
+                            </h1>
+                          </div>
+                          <div className="text-end w-[100%]">
+                            <p className="text-xs tracking-wide pb-1 text-[#FF6262]">
+                              Your Expenses
+                            </p>
+                            <h1 className="font-semibold tracking-wide text-[#FF6262] text-lg">
+                              - {formatNumber(totalExpense)}
+                            </h1>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
+              </section>
+            </button>
           </div>
         </div>
         <section className="flex justify-center w-full ">
