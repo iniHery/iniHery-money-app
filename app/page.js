@@ -144,11 +144,14 @@ export default function Home() {
 
   return (
     <div className="w-[100%] flex justify-center items-start bg-stone-100">
-      <div className="w-[100%] md:max-w-[500px] h-screen flex flex-col items-start ">
-        <div className="w-[100%] md:max-w-[500px]  flex items-start ">
-          <div className="content my-10 mx-auto  w-full max-w-[90%] md:max-w-[450px]">
-            <h1 className="font-semibold tracking-wide text-3xl text-black">
-              Money Managerrr
+      <div className="w-[100%] md:max-w-[500px] h-auto flex flex-col items-start ">
+        <div className="w-[100%] md:max-w-[500px] flex items-start ">
+          <div className="content my-10 mx-auto w-full max-w-[90%] md:max-w-[450px]">
+            <h1 className="grid font-semibold tracking-wide text-black border-b pb-4 leading-4">
+              <div className="text-blue-500 font-extrabold text-2xl">
+                Tech Tarik
+              </div>
+              <div className="font-medium text-md">Money App</div>
             </h1>
 
             <button
@@ -208,7 +211,7 @@ export default function Home() {
             <div className="">
               <div>
                 <div className="w-full flex justify-between items-center">
-                  <h1 className="font-semibold tracking-wide text-lg">
+                  <h1 className="font-bold tracking-wide text-lg">
                     All Transaction
                   </h1>
                   <div className="">
@@ -341,11 +344,11 @@ export default function Home() {
           </div>
         </section>
         <div className="flex items-center">
-          <section className="fixed-button flex justify-end items-center ">
-            <div className="w-[100%] max-w-[100%] ">
+          <section className="fixed-button flex justify-end items-center px-0">
+            <div className="w-[100%] max-w-[100%]">
               <div className="flex justify-end items-center">
                 <button type="button" onClick={toggleContainer}>
-                  <div className=" px-[20px] rounded-full py-[20px] bg-[#1E1E1E] text-white">
+                  <div className="px-[20px] rounded-[20px] py-[20px] bg-[#1E1E1E] text-white">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
