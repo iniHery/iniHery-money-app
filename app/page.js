@@ -152,9 +152,6 @@ export default function Home() {
                 Tech Tarik
               </div>
               <div className="font-medium text-md">Money App</div>
-              <div className="text-blue-500 font-extrabold text-2xl">
-                Tech Tarik
-              </div>
             </h1>
 
             <button
